@@ -1,31 +1,107 @@
 img {
     width: 100%;
+    height: 100%;
 }
 
-section {
-    max-width: 1200px;
-
+* {
+    box-sizing: border-box;
 }
 
 h1 {
     font-size: 4rem;
-    padding-right: 150px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.tider {
+    padding-top: 30px;
+}
+
+p {
+    font-size: 1.2rem;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
 }
 
 body {
-    background-image: url(vores_kaffebar_redigeret/wood_light.jpg);
-    background-size: cover;
-    width: 1200px;
-    height: 768px;
-    padding-top: 0;
     background-color: #FFFCE8;
+    margin: 0;
+    padding: 0;
 }
 
+
+/*BURGER MENU*/
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#menuknap {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    color: black;
+    font-size: 4rem;
+}
+
+#menu li {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+}
+
+nav {
+    background-color: rgb(36, 36, 36);
+    ;
+    display: block;
+    overflow: auto;
+    height: auto;
+    width: 55vw;
+    position: fixed;
+}
+
+nav a {
+    display: block;
+    color: #FFFCE8;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: auto;
+}
+
+nav a:hover {
+    background-color: #FFFCE8;
+    color: black;
+}
+
+
+
+
+
+/*
 nav {
     background-image: none;
     height: 3rem;
     display: flex;
-    /*align-items: flex-start;*/
+    align-items: flex-start;
     justify-content: flex-end;
     padding-left: 0;
     margin: 0;
@@ -60,14 +136,254 @@ nav a:hover {
     font-weight: 500;
 
 }
+*/
 
+
+
+
+
+
+
+.first_section {
+    background-image: url(vores_kaffebar_redigeret/forside_baggrund.png);
+    background-size: cover;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 4px solid rgb(141, 70, 0);
+    border-style: none none solid none;
+}
 
 #col_right {
-    width: 700px;
-    display: flex;
-
+    text-align: left;
+    padding-top: 80px;
 }
 
 #col_right img {
-    border-radius: 60%;
+    display: none;
 }
+
+label,
+input,
+textarea,
+select,
+button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+label {
+    padding-top: 20px;
+}
+
+input {
+    padding: 2px 50px;
+}
+
+.second_section {
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+    nav {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 25px 50px 25px;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        display: flex;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+
+
+
+    @media (min-width: 800px) {
+        p {
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+
+        .first_section h1,
+        .first_section h2,
+        .first_section h3 {
+            text-align: left;
+        }
+
+        .first_section h1 {
+            height: 100%;
+        }
+
+        .first_section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-right: 0;
+            gap: 70px;
+        }
+
+        .first_section #row_up {
+            display: grid;
+            grid-column: 1/2;
+        }
+
+        #col_right {
+            padding: 0;
+        }
+
+        #col_right img {
+            display: flex;
+            text-align: right;
+            border-radius: 500px 0 0 500px
+        }
+    }
+
+
+    @media (min-width: 1000px) {
+        .first_section h2 {
+            margin: 0;
+        }
+
+        .first_section h3 {
+            font-size: 1.4rem;
+        }
+    }
+
+
+
+    @media (min-width: 1100px) {
+        .first_section {
+            height: 760px;
+        }
+
+        .first_section h1 {
+            height: 0;
+            padding-bottom: 40px;
+        }
+
+        .first_section h2 {
+            padding-top: 100px;
+        }
+
+        #col_right img {
+            height: 656px;
+        }
+
+        .second_section p {
+            padding-right: 400px;
+            padding-left: 400px;
+        }
+    }
+
+
+
+    @media (min-width: 1200px) {
+        .first_section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .first_section #row_up {
+            grid-column: 1/3;
+        }
+
+        .first_section h1 {
+            padding-right: 170px;
+        }
+
+        #col_right {
+            grid-column: 3/4;
+        }
+    }
+
+
+    @media (min-width: 1349px) {
+        .first_section h1 {
+            padding-right: 319px;
+        }
+
+        .second_section p {
+            padding-right: 530px;
+            padding-left: 530px;
+        }
+
+        .tider {
+            text-align: center;
+        }
+    }
+
+
+    @media (min-width: 1498px) {
+        .first_section h1 {
+            padding-right: 468px;
+        }
+    }
+
+
+    @media (min-width: 1562px) {
+        .second_section p {
+            padding-right: 620px;
+            padding-left: 620px;
+        }
+    }
+
+
+    @media (min-width: 1647px) {
+        .first_section h1 {
+            padding-right: 617px;
+        }
+
+        .second_section p {
+            padding-right: 620px;
+            padding-left: 620px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**/
