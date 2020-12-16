@@ -1,0 +1,135 @@
+body {
+    background-color: beige;
+    padding: 100px;
+    padding-top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.video1,
+.video2,
+.video3,
+.video4 {
+    max-width: 40vw;
+}
+
+#splash {
+    overflow: hidden;
+    height: 700px;
+}
+
+.kaffebaren_tekst {
+    font-size: 6vw;
+    position: relative;
+    left: 80px;
+    bottom: 570px;
+    z-index: 1;
+}
+
+#tekststykke_1 {
+    display: flex;
+    float: left;
+}
+
+#tekststykke_2 {
+    display: flex;
+    float: left;
+}
+
+#tekststykke_3 {
+    display: flex;
+    float: left;
+}
+
+#tekststykke_4 {
+    display: flex;
+    float: left;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+p {
+    font-size: 1.2vw;
+}
+
+.video1 {
+    margin-top: 5vw;
+    margin-left: 4.5vw;
+    margin-right: 4.5vw;
+}
+
+.riccos_kaffe {
+    margin-top: 2.5vw;
+    text-align: left;
+    width: 40%;
+    margin-right: 4.5vw;
+    float: right;
+}
+
+.video2 {
+    margin-top: 10vw;
+    margin-left: 4.5vw;
+    margin-right: 4.5vw;
+}
+
+.musikken {
+    text-align: left;
+    width: 40%;
+    margin-top: 7.5vw;
+    margin-left: 4.5vw;
+    margin-right: 4.5vw;
+    float: right;
+}
+
+.video3 {
+    margin-top: 10vw;
+    margin-top: 5vw;
+    margin-left: 4.5vw;
+}
+
+.kunsten {
+    text-align: left;
+    width: 40%;
+    margin-top: 2.5vw;
+    margin-left: 4.5vw;
+    margin-right: 4.5vw;
+    float: right;
+}
+
+.video4 {
+    margin-top: 10vw;
+    margin-left: 4.5vw;
+}
+
+.menu {
+    text-align: left;
+    width: 40%;
+    margin-top: 7.5vw;
+    margin-left: 4.5vw;
+    margin-right: 4.5vw;
+    float: right;
+}
+
+#kaffe_boenner_png {
+    opacity: 70%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 700px;
+    left: 10px;
+}
+
+#malerpletter_png {
+    opacity: 70%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 1800px;
+    left: 200px;
+}
