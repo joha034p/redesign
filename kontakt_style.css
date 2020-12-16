@@ -47,11 +47,22 @@ form {
 }
 
 input {
-    padding: 2px 50px;
+    padding: 13px 100px;
 }
 
-
-
+button {
+    border: none;
+    background-color: #A05B29;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 4px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Special Elite';
+}
 
 
 
@@ -125,7 +136,7 @@ nav a:hover {
     padding-left: 20px;
     background-image: url(billeder_kontakt/barista_haand.jpg);
     background-size: cover;
-    height: 28vh;
+    height: 45vh;
     width: 100vw;
     background-position: 60% 40%;
 }
@@ -140,7 +151,7 @@ nav a:hover {
 }
 
 #second .underoverskrift1 {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 #second .text1 {
