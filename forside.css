@@ -145,7 +145,7 @@ nav a:hover {
 
 
 .first_section {
-    background-image: url(vores_kaffebar_redigeret/forside_baggrund.png);
+    background-image: url(om_os_redesign/vores_kaffebar_redigeret/forside_baggrund.png);
     background-size: cover;
     padding-top: 100px;
     padding-left: 50px;
@@ -266,7 +266,7 @@ input {
         #col_right img {
             display: flex;
             text-align: right;
-            border-radius: 500px 0 0 500px
+            border-radius: 500px 0 0 500px;
         }
     }
 
