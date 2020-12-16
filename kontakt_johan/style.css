@@ -1,0 +1,381 @@
+/*GENERELT*/
+img {
+    width: 50%;
+    height: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFCE8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #FFFCE8;
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(36, 36, 36);
+}
+
+p {
+    font-size: 1.1rem;
+    color: rgb(36, 36, 36);
+}
+
+label,
+input,
+textarea,
+select,
+button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 2px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/*BURGER MENU*/
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#menuknap {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    color: black;
+    font-size: 4rem;
+}
+
+#menu li {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBIL VERSION*/
+nav {
+    background-color: rgb(36, 36, 36);
+    ;
+    display: block;
+    overflow: auto;
+    height: auto;
+    width: 55vw;
+    position: fixed;
+}
+
+nav a {
+    display: block;
+    color: #FFFCE8;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: auto;
+}
+
+nav a:hover {
+    background-color: #FFFCE8;
+    color: black;
+}
+
+#first {
+    padding-top: 30px;
+    padding-left: 20px;
+    background-image: url(billeder/barista_haand.jpg);
+    background-size: cover;
+    height: 28vh;
+    width: 100vw;
+    background-position: 60% 40%;
+}
+
+#second {
+    text-align: center;
+    width: 100vw;
+    padding-left: 25%;
+    padding-right: 25%;
+    border: 2px solid rgb(36, 36, 36);
+    border-style: none none solid none;
+}
+
+#second .underoverskrift1 {
+    padding-top: 150px;
+}
+
+#second .text1 {
+    padding-bottom: 50px;
+}
+
+#second .tlfpic {
+    background-image: url(billeder/tlf_icon.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+#second .tlf {
+    padding-bottom: 50px;
+}
+
+#second .mailpic {
+    background-image: url(billeder/mail_icon.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+#second .mail {
+    padding-bottom: 50px;
+}
+
+#second .locpic {
+    background-image: url(billeder/location.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+#second .loc {
+    padding-bottom: 100px;
+}
+
+#third {
+    padding-top: 150px;
+}
+
+#third .map {
+    padding-bottom: 150px;
+}
+
+#third .googlemaps {
+    text-align: center;
+}
+
+.formular {
+    padding-bottom: 25px;
+}
+
+.form {
+    padding-bottom: 150px;
+}
+
+.navn {
+    padding-bottom: 20px;
+}
+
+.telefon {
+    padding-bottom: 20px;
+}
+
+.mail {
+    padding-bottom: 20px;
+}
+
+.besked {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/*TABLET VERSION*/
+@media (min-width: 700px) {
+    nav {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 25px 50px 25px;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        display: flex;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #first {
+        padding-top: 50px;
+    }
+}
+
+
+
+
+
+/*DESKTOP VERSION*/
+@media (min-width: 900px) {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #second {
+        padding-bottom: 150px;
+    }
+
+    #second .kontakter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    #second .text1 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #second .tlfpic {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #second .tlf {
+        text-align: left;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding: 0;
+    }
+
+    #second .mailpic {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 0;
+    }
+
+    #second .mail {
+        text-align: left;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        padding: 0;
+    }
+
+    #second .locpic {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        padding: 0;
+    }
+
+    #second .loc {
+        text-align: left;
+        grid-column: 2/3;
+        grid-row: 5/6;
+        padding: 0;
+    }
+
+    #third {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 150px;
+    }
+
+    #third h2 {
+        padding-left: 20px;
+    }
+
+    #third .googlemaps {
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    #third .formular {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    #second .text1 {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
