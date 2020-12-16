@@ -1,4 +1,51 @@
+/*BURGER MENU*/
 .hidden {
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#menuknap {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    color: black;
+    font-size: 4rem;
+}
+
+#menu li {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+}
+
+
+
+
+/*MOBIL VERSION*/
+nav {
+    background-color: rgb(36, 36, 36);
+    ;
+    display: block;
+    overflow: auto;
+    height: auto;
+    width: 100vw;
+    position: fixed;
+}
+
+nav a {
+    display: block;
+    color: #FFFCE8;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: auto;
+}
+
+
+
+/*.hidden {
     opacity: 0;
     transform: translateX(-100%);
 }
@@ -13,7 +60,7 @@
     transform-origin: top left;
     background-image: url(vores_kaffebar_redigeret/wood_light.jpg);
     /*height: 100vh;*/
-    color: white;
+/* color: white;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2.3rem;
@@ -22,16 +69,14 @@
     flex-direction: column;
     justify-content: space-around;
     font-family: 'Raleway', sans-serif;
-}
+}*/
 
 
-nav a {
+/*nav a {
     margin-top: 0px;
     color: black;
     text-decoration: none;
-
-}
-
+}*/
 
 
 img {
@@ -42,7 +87,7 @@ img {
 
 body {
     background-color: #FFFCE8;
-    margin: auto;
+    margin: 0;
 
 }
 
@@ -58,6 +103,7 @@ h1 {
     margin-left: 120px;
     margin-top: 50px;
     z-index: 5;
+    font-family: 'Special Elite', cursive;
 }
 
 .section_wrapper {
@@ -123,26 +169,8 @@ cta_button {}
 }
 
 
-.footer_content {
-    /*background-color: white;
-    text-align: center;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-top: 30px;
-    align-content: center;
-    width: auto;
-    height: 30vh;
-     flex-direction: row;
-      font-size: 1rem;*/
 
-    width: 100%;
-    height: auto;
-    margin: auto;
-    background-color: white;
-    padding: 20px 0px;
-}
-
+/**************footer******************/
 .footer_content a {
     text-decoration: none;
 }
@@ -157,7 +185,7 @@ cta_button {}
 .nav_footer ul {
     margin: 0px;
     padding: 0px;
-    text-align: center;
+
 }
 
 .nav_footer ul li {
@@ -172,25 +200,58 @@ cta_button {}
     color: black;
 }
 
-.contact_icons {
-    width: 50px;
-    height: 50px;
-    margin: auto;
-}
 
 .contact_icons ul {
-    margin: 0px;
+    margin-right: 60px;
     padding: 0ppx;
-    text-align: center;
+
 }
 
 .contact_icons ul li {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    margin: 0px 10px;
+    display: inline-block;
+    width: 40px;
+    margin: 0px 60px;
 
 }
+
+.contact_icons ul li:nth-child(1) {
+    margin-top: 20px;
+    ;
+}
+
+.contact_info {
+    padding-right: 200px;
+}
+
+.contact_info ul {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.contact_info ul li {
+    display: inline-block;
+    margin: 0px 28px;
+}
+
+.some_icons {
+    margin-bottom: 30px;
+}
+
+.some_icons ul {
+    margin-right: 50px;
+    padding: 0ppx;
+}
+
+.some_icons ul li {
+    display: inline-block;
+    width: 20px;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
 
 
 
@@ -199,6 +260,8 @@ cta_button {}
     flex-grow: 1;
     padding: 0;
 }*/
+
+
 
 #logo {
     width: 150px;
@@ -210,14 +273,6 @@ cta_button {}
     padding-top: 25px;
 
 }
-
-
-footer .nav_footer {
-    align-content: center;
-}
-
-
-
 
 
 /*****************Meida query********************/
@@ -306,6 +361,7 @@ footer .nav_footer {
         margin-top: 160px;
         margin-left: 150px;
         margin-bottom: 150px;
+        top: 30px;
     }
 
     .container2 col_right {
@@ -313,12 +369,128 @@ footer .nav_footer {
     }
 
     #coffee_beans {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flew;
+        float: left up;
         opacity: 70%;
         transform: rotate(40deg);
         width: 500px;
         height: auto;
+        position: relative;
+        top: 0;
 
     }
 }
+
+
+/**************Footer*******************/
+.footer_content {
+    /*background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-content: center;
+    width: auto;
+    height: 30vh;
+     flex-direction: row;
+      font-size: 1rem;*/
+
+    width: 80%%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    padding: 20px 0px;
+}
+
+.footer_content a {
+    text-decoration: none;
+}
+
+.nav_footer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.nav_footer ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.nav_footer ul li {
+    display: inline-block;
+    margin: 0px 25px;
+}
+
+.nav_footer ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+
+.contact_icons ul {
+    margin-right: 60px;
+    padding: 0ppx;
+    text-align: center;
+}
+
+.contact_icons ul li {
+    display: inline-block;
+    width: 40px;
+    margin: 0px 60px;
+
+}
+
+.contact_icons ul li:nth-child(1) {
+    margin-top: 20px;
+    ;
+}
+
+.contact_info {
+    padding-right: 200px;
+}
+
+.contact_info ul {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.contact_info ul li {
+    display: inline-block;
+    margin: 0px 28px;
+}
+
+.some_icons {
+    margin-bottom: 30px;
+}
+
+.some_icons ul {
+    margin-right: 50px;
+    padding: 0ppx;
+    text-align: center;
+}
+
+.some_icons ul li {
+    display: inline-block;
+    width: 20px;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+
+
+
+/*footer:first-child {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0;
+}*/
