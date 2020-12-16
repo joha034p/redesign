@@ -120,10 +120,7 @@ nav a:hover {
     width: 200px;
     display: inline-block;
 }
-<<<<<<< HEAD:om_os_redesign/om_os.css
 
-=======
->>>>>>> redesign/master:om_os.css
 
 */ .col_1 {
     width: 100vw;
@@ -182,8 +179,6 @@ nav a:hover {
     display: inline-block;
     width: 40px;
     margin: 0px 60px;
-<<<<<<< HEAD:om_os_redesign/om_os.css
-=======
 
 }
 
@@ -203,14 +198,12 @@ nav a:hover {
     margin-top: 20px;
     font-size: 0.8rem;
 }
->>>>>>> redesign/master:om_os.css
 
-.contact_info ul li {
+> > > > > > > redesign/master:om_os.css .contact_info ul li {
     display: inline-block;
     margin: 0px 28px;
 }
 
-<<<<<<< HEAD:om_os_redesign/om_os.css
 .contact_icons ul li:nth-child(1) {
     margin-top: 20px;
     ;
@@ -233,8 +226,6 @@ nav a:hover {
     margin: 0px 28px;
 }
 
-=======
->>>>>>> redesign/master:om_os.css
 .some_icons {
     margin-bottom: 30px;
 }
@@ -284,33 +275,26 @@ nav a:hover {
 
     #menu.hidden {
         transform: translateX(0);
-        opacity: 1;
-<<<<<<< HEAD:om_os_redesign/om_os.css
-=======
         display: flex;
     }
 
     #menu li {
         display: inline-block;
->>>>>>> redesign/master:om_os.css
+
     }
 
     nav {
         display: flex;
         flex-direction: row;
         width: 100%;
-<<<<<<< HEAD:om_os_redesign/om_os.css
         justify-content: flex-end;
-=======
         position: fixed;
         justify-content: center;
->>>>>>> redesign/master:om_os.css
         padding-left: 5px;
         font-size: 1rem;
         color: black;
         height: 2.8rem;
-<<<<<<< HEAD:om_os_redesign/om_os.css
-=======
+
     }
 
     nav a {
@@ -321,7 +305,6 @@ nav a:hover {
     nav a:hover {
         text-decoration: underline;
         font-weight: 500;
->>>>>>> redesign/master:om_os.css
     }
 
     .container1 {
@@ -481,8 +464,7 @@ nav a:hover {
 
 @media (min-width: 800px) {
     .container1 {
-<<<<<<< HEAD:om_os_redesign/om_os.css
-        display: grid;
+        grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
         margin-top: 70px;
@@ -502,8 +484,7 @@ nav a:hover {
     .container2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-=======
-        display: grid;
+        =======display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
         margin-top: 70px;
@@ -523,7 +504,6 @@ nav a:hover {
     .container2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
->>>>>>> redesign/master:om_os.css
         grid-gap: 30px;
         margin-top: 150px;
         margin-left: 70px;
