@@ -1,0 +1,73 @@
+img {
+    width: 100%;
+}
+
+section {
+    max-width: 1200px;
+
+}
+
+h1 {
+    font-size: 4rem;
+    padding-right: 150px;
+}
+
+body {
+    background-image: url(vores_kaffebar_redigeret/wood_light.jpg);
+    background-size: cover;
+    width: 1200px;
+    height: 768px;
+    padding-top: 0;
+    background-color: #FFFCE8;
+}
+
+nav {
+    background-image: none;
+    height: 3rem;
+    display: flex;
+    /*align-items: flex-start;*/
+    justify-content: flex-end;
+    padding-left: 0;
+    margin: 0;
+    background-color: #FFFCE8;
+    flex-direction: row;
+    font-size: 1rem;
+    color: black;
+
+}
+
+nav a {
+    padding: 30px;
+    margin-bottom: 13px;
+}
+
+nav a:first-child {
+    text-align: left;
+    flex-grow: 1;
+    padding: 0;
+
+
+}
+
+nav img {
+    width: 170px;
+    padding-left: 15px;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+
+}
+
+
+#col_right {
+    width: 700px;
+    display: flex;
+
+}
+
+#col_right img {
+    border-radius: 60%;
+}
