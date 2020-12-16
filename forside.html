@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,11 +18,22 @@
 
     <header>
         <nav>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden" style="padding-left: 0px;margin-top: 0px;margin-bottom: 0px;">
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="kaffebaren.html">Kaffebaren</a></li>
+                <li><a href="om_os.html">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+
+            <!--
             <a href="#forside.html"><img src="logo.png" alt="logo"></a>
             <a href="#om_os">Om os</a>
             <a href="#kaffebaren.html">Kaffebaren</a>
             <a href="#kontakt.html">Kontakt</a>
             <a href="#billeder.html">Billeder</a>
+-->
         </nav>
     </header>
     <main>
@@ -29,25 +42,80 @@
 
                 <div class="first_section">
                     <div id="row_up">
-                        <h1>Velkommen til</h1>
-                        <h1>Vores Kaffebar</h1>
-                        <h3>Vores kaffe er din kaffe</h3>
+                        <h1>Velkommen til Vores Kaffebar</h1>
+                        <h2>Vores kaffe er din kaffe</h2>
+                        <div class="tider">
+                            <h3>Man - Fre: 7- 18</h3>
+                            <h3>Lør - Søn: 9 - 18 </h3>
+                        </div>
                     </div>
-                    <div id="row_down">
-                        <h4>Man - Fre: 7- 18
-                            Lør - Søn: 9 - 18 </h4>
+                    <div id="col_right">
+                        <img src="vores_kaffebar_redigeret/caffe_latte_lavet_.jpg" alt="laver en kaffe">
                     </div>
-                    <div id="col_right"><img src="vores_kaffebar_redigeret/caffe_latte_lavet_.jpg" alt="laver en kaffe"></div>
+                </div>
 
+                <div class="second_section">
+                    <h2>Nyhedsbrev</h2>
+                    <p>Send os din E-mail adresse og få nyhedsbrev om update af menu, events og lignende.</p>
+
+                    <div class="email">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <button>Indsend</button>
                 </div>
             </div>
         </section>
 
 
 
-        <script src=""></script>
     </main>
+    <footer>
+        <div class="footer_content">
+            <div id="logo"><img src="logo.png" alt="logo"></div>
+
+            <div class="nav_footer">
+                <ul>
+                    <li><a href="#kaffebaren">Kaffebaren</a></li>
+                    <li><a href="#om_os">Om os</a></li>
+                    <li><a href="#fourth_section">Kontakt</a></li>
+                    <li><a href="#fifth_section">Billeder</a></li>
+                </ul>
+            </div>
+
+            <div class="contact_icons">
+
+                <ul>
+                    <li><img src="adresse.png" alt="adresse">
+                    </li>
+                    <li><img src="mail.png" alt="email">
+                    </li>
+                    <li><img src="telefon.png" alt="telefon">
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="contact_info">
+                <ul>
+                    <li>Holmbladsgade 50,
+                        København 2300</li>
+                    <li>Voreskaffebar@gmail.com</li>
+                    <li>+4530514041</li>
+                </ul>
+
+
+            </div>
+
+            <div class="some_icons">
+                <ul>
+                    <li><img src="instagram.png" alt=""></li>
+                    <li><img src="facebook.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="forside.js"></script>
 </body>
-<footer></footer>
 
 </html>
