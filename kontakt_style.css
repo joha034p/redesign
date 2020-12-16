@@ -123,7 +123,7 @@ nav a:hover {
 #first {
     padding-top: 30px;
     padding-left: 20px;
-    background-image: url(billeder/barista_haand.jpg);
+    background-image: url(billeder_kontakt/barista_haand.jpg);
     background-size: cover;
     height: 28vh;
     width: 100vw;
@@ -148,7 +148,7 @@ nav a:hover {
 }
 
 #second .tlfpic {
-    background-image: url(billeder/tlf_icon.png);
+    background-image: url(billeder_kontakt/tlf_icon.png);
     background-size: cover;
     width: 50px;
     height: 50px;
@@ -160,7 +160,7 @@ nav a:hover {
 }
 
 #second .mailpic {
-    background-image: url(billeder/mail_icon.png);
+    background-image: url(billeder_kontakt/mail_icon.png);
     background-size: cover;
     width: 70px;
     height: 70px;
@@ -172,7 +172,7 @@ nav a:hover {
 }
 
 #second .locpic {
-    background-image: url(billeder/location.png);
+    background-image: url(billeder_kontakt/location.png);
     background-size: cover;
     width: 60px;
     height: 60px;
