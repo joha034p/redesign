@@ -1,11 +1,57 @@
 body {
-    background-color: beige;
+    background-color: white;
     padding: 100px;
     padding-top: 10px;
 }
 
 img {
     width: 100%;
+}
+
+#logo {
+    width: 9vw;
+    height: 7vw;
+    position: relative;
+    left: 80px;
+    top: 25px;
+
+}
+
+nav {
+    background-color: beige;
+    width: auto;
+    height: 6vw;
+}
+
+.nav_sider {
+    color: black;
+}
+
+.nav_sider li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    display: inline-block;
+    position: relative;
+    left: 850px;
+    bottom: 100px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+.nav_sider:link {
+    color: black;
+}
+
+.nav_sider:hover {
+    color: brown;
+}
+
+.nav_sider:visited {
+    color: blue;
+}
+
+.billede {
+    opacity: 85%;
 }
 
 .video1,
@@ -21,10 +67,11 @@ img {
 }
 
 .kaffebaren_tekst {
+    font-family: 'Special Elite', cursive;
     font-size: 6vw;
     position: relative;
     left: 80px;
-    bottom: 570px;
+    bottom: 550px;
     z-index: 1;
 }
 
@@ -49,10 +96,12 @@ img {
 }
 
 h2 {
+    font-family: 'Special Elite', cursive;
     font-size: 2.5vw;
 }
 
 p {
+    font-family: 'Raleway', sans-serif;
     font-size: 1.2vw;
 }
 
@@ -132,4 +181,39 @@ p {
     position: absolute;
     top: 1800px;
     left: 200px;
+}
+
+.kontakt_ikoner ul li {
+    width: 2vw;
+    height: 0.5vw;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    right: 110px;
+    top: 35px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.some_ikoner ul li {
+    width: 1.7vw;
+    height: 0.5vw;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    left: 1360px;
+    bottom: 30px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#tekst_til_adresse {
+    position: relative;
+    left: 150px;
+    top: 220px;
+}
+
+footer {
+    border: 1px solid blue;
+    background-color: beige;
 }
