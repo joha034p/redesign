@@ -25,6 +25,60 @@ h2 {
 }
 
 
+<<<<<<< HEAD
+=======
+/*BURGER MENU*/
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#menuknap {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    color: black;
+    font-size: 4rem;
+}
+
+#menu li {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+}
+
+
+/*MOBIL VERSION*/
+nav {
+    background-color: rgb(36, 36, 36);
+    ;
+    display: block;
+    overflow: auto;
+    height: auto;
+    width: 55vw;
+    position: fixed;
+}
+
+nav a {
+    display: block;
+    color: #FFFCE8;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: auto;
+}
+
+nav a:hover {
+    background-color: #FFFCE8;
+    color: black;
+}
+
+
+
+
+>>>>>>> redesign/master
 button {
     border: none;
     background-color: #A05B29;
@@ -129,3 +183,34 @@ button {
     margin: 0px 10px;
     margin-top: 10px;
 }
+<<<<<<< HEAD
+=======
+
+@media (min-width: 700px) {
+    nav {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 25px 50px 25px;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        display: flex;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
+>>>>>>> redesign/master
