@@ -46,6 +46,9 @@ body {
 }
 
 
+
+
+
 /*BURGER MENU*/
 .hidden {
     display: none;
@@ -91,10 +94,6 @@ nav a:hover {
     background-color: #FFFCE8;
     color: black;
 }
-
-
-
-
 
 /*
 nav {
@@ -144,8 +143,257 @@ nav a:hover {
 
 
 
+
+
+
+
+/*FOOTER*/
+.footer_content a {
+    text-decoration: none;
+}
+
+.nav_footer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.nav_footer ul {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.nav_footer ul li {
+    display: inline-block;
+    margin: 0px 25px;
+}
+
+.nav_footer ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+
+.contact_icons ul {
+    margin-right: 60px;
+    padding: 0ppx;
+}
+
+.contact_icons ul li {
+    display: inline-block;
+    width: 40px;
+    margin: 0px 60px;
+}
+
+.contact_icons ul li:nth-child(1) {
+    margin-top: 20px;
+    ;
+}
+
+.contact_info {
+    padding-right: 200px;
+}
+
+.contact_info ul {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.contact_info ul li {
+    display: inline-block;
+    margin: 0px 28px;
+}
+
+.contact_icons ul li:nth-child(1) {
+    margin-top: 20px;
+    ;
+}
+
+.contact_info {
+    padding-right: 200px;
+}
+
+.contact_info ul {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.contact_info ul li {
+    display: inline-block;
+    margin: 0px 28px;
+}
+
+.some_icons {
+    margin-bottom: 30px;
+}
+
+.some_icons ul {
+    margin-right: 50px;
+    padding: 0ppx;
+}
+
+.some_icons ul li {
+    display: inline-block;
+    width: 20px;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+
+
+
+/*footer:first-child {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0;
+}*/
+
+#logo {
+    width: 150px;
+    text-align: center;
+    /*padding-left: 650px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+
+}
+
+/**************Footer*******************/
+.footer_content {
+    /*background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-content: center;
+    width: auto;
+    height: 30vh;
+     flex-direction: row;
+      font-size: 1rem;*/
+
+    width: 80%%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    padding: 20px 0px;
+}
+
+.footer_content a {
+    text-decoration: none;
+}
+
+.nav_footer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.nav_footer ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.nav_footer ul li {
+    display: inline-block;
+    margin: 0px 25px;
+}
+
+.nav_footer ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+.contact_icons ul {
+    margin-right: 60px;
+    padding: 0ppx;
+    text-align: center;
+}
+
+.contact_icons ul li {
+    display: inline-block;
+    width: 40px;
+    margin: 0px 60px;
+
+}
+
+.contact_icons ul li:nth-child(1) {
+    margin-top: 20px;
+    ;
+}
+
+.contact_info {
+    padding-right: 200px;
+}
+
+.contact_info ul {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.contact_info ul li {
+    display: inline-block;
+    margin: 0px 28px;
+}
+
+.some_icons {
+    margin-bottom: 30px;
+}
+
+.some_icons ul {
+    margin-right: 50px;
+    padding: 0ppx;
+    text-align: center;
+}
+
+.some_icons ul li {
+    display: inline-block;
+    width: 20px;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .first_section {
-    background-image: url(om_os_redesign/vores_kaffebar_redigeret/forside_baggrund.png);
+    background-image: url(vores_kaffebar_redigeret/forside_baggrund.png);
     background-size: cover;
     padding-top: 100px;
     padding-left: 50px;
@@ -182,8 +430,25 @@ input {
     padding: 2px 50px;
 }
 
+button {
+    border: none;
+    background-color: #A05B29;
+    padding: 10px 30px;
+    margin-bottom: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Special Elite';
+}
+
+.email {
+    padding-bottom: 20px;
+}
+
 .second_section {
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 
